@@ -1,0 +1,18 @@
+[profile.default]
+src = "contracts"
+out = "out"
+lib = ["lib"]
+optimizer = true
+optimizer_runs = 20000
+via_ir = true
+remappings = [
+  "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+  "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/"
+]
+
+
+auto_detect_remappings = true
+dotenv = ".env"
+
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
